@@ -1,14 +1,39 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'index/style.css'%}">
+    <title>NESESI</title>
 </head>
 <body>
-    <h1>NESESI</h1>
-    <a href="{% url 'login' %}">Login</a>
-    <a href="{% url 'register' %}">Register</a>
+    <header>
+        <a href="{% url 'index' %}"><img src="{% static 'images/1.png' %}" id="logo" alt="NESESI Logo"></a>
+        <nav>
+            <a href="{% url 'login' %}" id="logNav">Login</a>
+            <a href="{% url 'register' %}" id="regNav">Register</a>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <section id="beginSect">
+                <p>Nesesi is an open-source web chat-bot project that utilizes the generative GPT-3.5 technology developed and provided by OpenAI to assist, guide, and teach new languages to anyone, anywhere, and on any device! The platform operates in a didactic, personalized, and adaptable manner, aiming to create an immersive and effective experience for the user, and is also accessible to people of all ages, with disabilities or disorders. <br><br>
+                I will always be developing and evolving the platform, seeking to bring new features and incorporate the latest technologies. As the project is open-source, any and all help in development is welcome. If you are interested, look for the repository on my GitHub page. <br><br>
+                Nesesi is the newest way to learn languages, in an interactive, personalized, and immersive manner. Are you ready to start your new journey?
+                </p>
+                <a href="{% url 'register' %}" id="regBtn">START STUDYING NOW!</a>
+                <a href="{% url 'login' %}" id="logBtn">Already have an account? Login Here</a>
+            </section>
+
+            <section id="imgSect">
+                <img src="{% static 'images/studying.png'%}" alt="Girl studying with a laptop">
+                <a href="https://www.flaticon.com/br/stickers-gratis/universidade" title="universidade figurinhas">Sticker - Flaticon</a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Developed by Steps</p>
+    </footer>
 </body>
 </html>

@@ -9,25 +9,25 @@
 </head>
 <body>
     <header>
-        <a href="{% url 'index' %}"><img src="{% static 'images/1.png'%}" id="logo" alt="Logomarca NESESI"></a>
+        <a href="{% url 'index' %}"><img src="{% static 'images/1.png'%}" id="logo" alt="NESESI Logo"></a>
     </header>
 
-    <section id="regForm">
-        <form>
-            <label>Username</label>
-            <input type="text" id="usrInput">
-            <label>Email</label>
-            <input type="email" id="emInput">
-            <label>Password</label>
-            <input type="password" id="pswInput">
-            <label>OpenAI API Key</label>
-            <input type="text" id="oaiInput">
-            <input type="submit" value="Register">
-            <a href="{% url 'login'%}" id="toLogin">Login Here</a>
-        </form>
-    </section>
-
-
+    <main>
+        <section id="regForm">
+            <form>
+                <label>Username</label>
+                <input type="text" id="usrInput">
+                <label>Email</label>
+                <input type="email" id="emInput">
+                <label>Password</label>
+                <input type="password" id="pswInput">
+                <label>OpenAI API Key</label>
+                <input type="text" id="oaiInput">
+                <input type="submit" value="Register">
+                <a href="{% url 'login'%}" id="toLogin">Login Here</a>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>Developed by Steps</p>
