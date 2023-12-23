@@ -1,11 +1,36 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'register/style.css'%}">
     <title>NESESI - Register</title>
 </head>
 <body>
-    <h1>REGISTER</h1>
+    <header>
+        <a href="{% url 'index' %}"><img src="{% static 'images/1.png'%}" id="logo" alt="Logomarca NESESI"></a>
+    </header>
+
+    <section id="regForm">
+        <form>
+            <label>Username</label>
+            <input type="text" id="usrInput">
+            <label>Email</label>
+            <input type="email" id="emInput">
+            <label>Password</label>
+            <input type="password" id="pswInput">
+            <label>OpenAI API Key</label>
+            <input type="text" id="oaiInput">
+            <input type="submit" value="Register">
+            <a href="{% url 'login'%}" id="toLogin">Login Here</a>
+        </form>
+    </section>
+
+
+
+    <footer>
+        <p>Developed by Steps</p>
+    </footer>
 </body>
 </html>
