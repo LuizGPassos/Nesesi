@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <a href="index.html"><img src="{%static 'login/images/1.png'%}" id="logo" alt="Logomarca NESESI"></a>
+        <a href="{% url 'index' %}"><img src="{%static 'login/images/1.png'%}" id="logo" alt="Logomarca NESESI"></a>
     </header>
 
     <section id="logForm">
@@ -20,7 +20,7 @@
             <label>Password</label>
             <input type="password" id="psInput">
             <input type="submit" value="Login">
-            <a href="register.html" id="toRegister">Register Here</a>
+            <a href="{% url 'register' %}" id="toRegister">Register Here</a>
         </form>
     </section>
 

@@ -66,14 +66,14 @@ footer {
 }
 
 footer {
-    position: absolute; /* Posição absoluta */
-    bottom: 0; /* Alinha na parte inferior */
-    width: 100%; /* Largura total */
-    height: 75px; /* Altura do rodapé, ajuste conforme necessário */
-    background-color: #81d6e3; /* Cor de fundo do rodapé */
-    color: #419791; /* Cor do texto do rodapé */
-    text-align: center; /* Alinhamento do texto */
-    line-height: 50px; /* Centraliza verticalmente o texto no rodapé */
+    position: absolute; 
+    bottom: 0;
+    width: 100%; 
+    height: 75px;
+    background-color: #81d6e3; 
+    color: #419791; 
+    text-align: center; 
+    line-height: 50px; 
     margin-top: 20px;
     font-weight: bold;
 }
