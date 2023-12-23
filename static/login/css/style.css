@@ -1,46 +1,79 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 0;
     margin: 0;
-    background-color: #f0f0f0; /* Cor de fundo opcional para o corpo da página */
+    background-color: #b2ddf7;
+    font-family: Arial, sans-serif;
+}
+
+#logo{
+    margin: 10px;
+    width: 10vw;
+
+}
+
+footer {
+    text-align: center;
 }
 
 #logForm {
-    width: 300px; /* ou a largura que preferir */
+    background-color: #81d6e3;
     padding: 20px;
-    background-color: white; /* Cor de fundo para o formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para o formulário */
+    margin: 20px auto;
+    width: 35vw;
 }
 
-.form-group {
-    margin-bottom: 15px;
+#logForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
+#logForm label {
+    color: #419791;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-.form-group input[type="email"],
-.form-group input[type="password"],
-.form-group input[type="submit"] {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    margin-top: 5px; /* Espaçamento acima dos campos de entrada */
+#logForm input[type=email], #logForm input[type=password] {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #81d6e3;
+    width: 60%;
 }
 
-.form-group input[type="submit"] {
-    background-color: #007bff;
+#logForm input[type=submit] {
+    background-color: #4cb5ae;
     color: white;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-.form-group input[type="submit"]:hover {
-    background-color: #0056b3;
+#logForm input[type=submit]:hover {
+    background-color: #6097a9;
 }
 
+#toRegister {
+    color: #419791;
+    margin-top: 10px;
+    text-decoration: none;
+}
 
+#toRegister:hover {
+    color: #fff;
+}
+
+footer {
+    position: absolute; /* Posição absoluta */
+    bottom: 0; /* Alinha na parte inferior */
+    width: 100%; /* Largura total */
+    height: 75px; /* Altura do rodapé, ajuste conforme necessário */
+    background-color: #81d6e3; /* Cor de fundo do rodapé */
+    color: #419791; /* Cor do texto do rodapé */
+    text-align: center; /* Alinhamento do texto */
+    line-height: 50px; /* Centraliza verticalmente o texto no rodapé */
+    margin-top: 20px;
+    font-weight: bold;
+}
